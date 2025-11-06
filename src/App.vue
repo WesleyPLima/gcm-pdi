@@ -81,7 +81,7 @@ const callNumber = (number) => {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #0d3b66 0%, #1a5490 100%);
+  background: linear-gradient(to right, #0d3b66 0%, #1a5490 35%, #9B59B6 90%);
 }
 
 .header {
