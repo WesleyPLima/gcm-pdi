@@ -142,6 +142,7 @@ const callNumber = (number) => {
   background: linear-gradient(to right, #0d3b66 0%, #1a5490 35%, #9B59B6 90%);
   position: relative;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
@@ -572,10 +573,15 @@ const callNumber = (number) => {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    width: 100%;
   }
 
   .info-card {
     padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .info-card h3 {
@@ -664,11 +670,16 @@ const callNumber = (number) => {
 
   .info-section {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     gap: 1.25rem;
+    display: grid;
+    width: 100%;
   }
 
   .info-card {
     padding: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .info-card h3 {
