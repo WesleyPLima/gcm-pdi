@@ -35,8 +35,8 @@ const callNumber = (number) => {
         <div class="logo-section">
           <img v-if="showLogo && logoImage" :src="logoImage" alt="Logo Guarda Civil Municipal" class="logo-image" />
           <div v-else class="shield-icon">🛡️</div>
-          <h1 class="title">Guarda Civil Municipal</h1>
         </div>
+        <h1 class="title">Guarda Civil Municipal</h1>
         <p class="subtitle">Palmeira dos Índios - AL</p>
       </div>
     </header>
@@ -188,8 +188,7 @@ const callNumber = (number) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
@@ -222,23 +221,27 @@ const callNumber = (number) => {
   font-size: 2rem;
   font-weight: 800;
   color: #ffffff;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   letter-spacing: 0.5px;
   background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  width: 100%;
 }
 
 .subtitle {
   font-size: 1.1rem;
   color: #FFD700;
-  margin: 0;
+  margin: 0.5rem auto 0;
   font-weight: 600;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
   animation: fadeIn 1s ease-out 0.4s both;
+  width: 100%;
 }
 
 .main-content {
@@ -506,8 +509,7 @@ const callNumber = (number) => {
   }
 
   .logo-section {
-    gap: 1rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .logo-image {
@@ -521,11 +523,14 @@ const callNumber = (number) => {
 
   .title {
     font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
   }
 
   .subtitle {
     font-size: 1rem;
-    margin-top: 0.25rem;
+    text-align: center;
+    width: 100%;
   }
 
   .main-content {
@@ -600,8 +605,7 @@ const callNumber = (number) => {
   }
 
   .logo-section {
-    gap: 0.75rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .logo-image {
@@ -615,10 +619,14 @@ const callNumber = (number) => {
 
   .title {
     font-size: 1.25rem;
+    text-align: center;
+    width: 100%;
   }
 
   .subtitle {
     font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
   }
 
   .main-content {
