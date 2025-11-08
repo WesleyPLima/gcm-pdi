@@ -57,7 +57,11 @@ const callNumber = (number) => {
           class="contact-button guarda-civil" 
           @click="callNumber(guardaCivilNumber)"
         >
-          <div class="button-icon">📞</div>
+          <div class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="56" height="56">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </div>
           <div class="button-content">
             <span class="button-label">Guarda Civil Municipal</span>
             <span class="button-number">{{ guardaCivilNumber }}</span>
@@ -139,17 +143,17 @@ const callNumber = (number) => {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #0d3b66 0%, #1a5490 35%, #9B59B6 90%);
+  background: #0d3b66;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 
 .header {
-  background: linear-gradient(to right, #0d3b66 0%, #1a5490 35%, #9B59B6 90%);
-  padding: 1.5rem 1rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: #0d3b66;
+  padding: 2rem 2.5rem;
   border-bottom: 4px solid #FFD700;
   position: relative;
   z-index: 1;
@@ -197,7 +201,6 @@ const callNumber = (number) => {
   height: auto;
   max-height: 160px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
   transition: transform 0.3s ease;
   animation: pulse 3s ease-in-out infinite;
 }
@@ -208,7 +211,6 @@ const callNumber = (number) => {
 
 .shield-icon {
   font-size: 4rem;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
   animation: pulse 3s ease-in-out infinite;
   transition: transform 0.3s ease;
 }
@@ -223,13 +225,9 @@ const callNumber = (number) => {
   color: #ffffff;
   margin: 0 auto;
   text-align: center;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.2);
   letter-spacing: 0.5px;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   width: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .subtitle {
@@ -238,10 +236,10 @@ const callNumber = (number) => {
   margin: 0.5rem auto 0;
   font-weight: 600;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
   animation: fadeIn 1s ease-out 0.4s both;
   width: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .main-content {
@@ -249,7 +247,7 @@ const callNumber = (number) => {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 3rem 2.5rem;
   position: relative;
   z-index: 1;
 }
@@ -264,10 +262,10 @@ const callNumber = (number) => {
   font-size: 2.5rem;
   font-weight: 800;
   color: #ffffff;
-  margin-bottom: 1rem;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
   letter-spacing: -0.5px;
   line-height: 1.2;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .hero-description {
@@ -275,8 +273,8 @@ const callNumber = (number) => {
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto 1rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.5rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .buttons-container {
@@ -294,16 +292,16 @@ const callNumber = (number) => {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border: none;
   border-radius: 20px;
-  padding: 2.5rem;
+  padding: 3rem 2.5rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   gap: 1.75rem;
   text-align: left;
   position: relative;
   overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .contact-button::before {
@@ -341,11 +339,6 @@ const callNumber = (number) => {
 
 .contact-button:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.guarda-civil:hover {
-  box-shadow: 0 20px 40px rgba(13, 59, 102, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 .contact-button:hover::after {
@@ -361,19 +354,25 @@ const callNumber = (number) => {
   font-size: 3.5rem;
   flex-shrink: 0;
   transition: transform 0.3s ease;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-align: center;
 }
 
-.contact-button:hover .button-icon {
+.button-icon svg {
+  width: 56px;
+  height: 56px;
+  transition: transform 0.3s ease;
+}
+
+.contact-button:hover .button-icon svg {
   transform: scale(1.15) rotate(5deg);
 }
 
-.guarda-civil .button-icon {
-  filter: drop-shadow(0 4px 8px rgba(13, 59, 102, 0.4));
-}
-
-.patrulha-maria-penha .button-icon {
-  filter: drop-shadow(0 4px 8px rgba(155, 89, 182, 0.4));
+.guarda-civil .button-icon svg {
+  fill: #0d3b66;
 }
 
 .button-content {
@@ -409,7 +408,6 @@ const callNumber = (number) => {
 
 .guarda-civil:hover .button-number {
   color: #1a5490;
-  text-shadow: 0 0 15px rgba(26, 84, 144, 0.6);
   transform: scale(1.05);
 }
 
@@ -419,7 +417,6 @@ const callNumber = (number) => {
 
 .patrulha-maria-penha:hover .button-number {
   color: #8B7FA8;
-  text-shadow: 0 0 15px rgba(155, 89, 182, 0.6);
   transform: scale(1.05);
 }
 
@@ -435,12 +432,12 @@ const callNumber = (number) => {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px);
   border-radius: 20px;
-  padding: 2.5rem;
+  padding: 3rem 2.5rem;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .info-card::before {
@@ -458,7 +455,6 @@ const callNumber = (number) => {
 .info-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
 .info-card:hover::before {
@@ -468,11 +464,11 @@ const callNumber = (number) => {
 .info-card h3 {
   color: #FFD700;
   font-size: 1.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .info-card p {
@@ -480,20 +476,20 @@ const callNumber = (number) => {
   line-height: 1.8;
   margin: 0;
   font-size: 1.05rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .footer {
-  background: linear-gradient(to right, #0d3b66 0%, #1a5490 35%, #9B59B6 90%);
-  padding: 2rem 1.5rem;
+  background: #0d3b66;
+  padding: 2.5rem 2.5rem;
   text-align: center;
   border-top: 4px solid #FFD700;
   margin-top: auto;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .footer p {
@@ -505,7 +501,7 @@ const callNumber = (number) => {
 
 @media (max-width: 768px) {
   .header {
-    padding: 1rem 1rem;
+    padding: 1.5rem 2rem;
   }
 
   .logo-section {
@@ -534,7 +530,7 @@ const callNumber = (number) => {
   }
 
   .main-content {
-    padding: 1rem 1rem;
+    padding: 2rem 2rem;
   }
 
   .hero-section {
@@ -559,7 +555,7 @@ const callNumber = (number) => {
   }
 
   .contact-button {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   .button-icon {
@@ -584,7 +580,7 @@ const callNumber = (number) => {
   }
 
   .info-card {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     width: 100%;
     box-sizing: border-box;
   }
@@ -601,7 +597,7 @@ const callNumber = (number) => {
 
 @media (max-width: 480px) {
   .header {
-    padding: 0.75rem 0.75rem;
+    padding: 1.25rem 1.5rem;
   }
 
   .logo-section {
@@ -630,7 +626,7 @@ const callNumber = (number) => {
   }
 
   .main-content {
-    padding: 0.75rem 0.75rem;
+    padding: 1.5rem 1.5rem;
   }
 
   .hero-section {
@@ -654,7 +650,7 @@ const callNumber = (number) => {
   }
 
   .contact-button {
-    padding: 1.25rem;
+    padding: 1.75rem 1.25rem;
     flex-direction: row;
     text-align: left;
     gap: 1rem;
@@ -685,7 +681,7 @@ const callNumber = (number) => {
   }
 
   .info-card {
-    padding: 1.25rem;
+    padding: 1.75rem 1.5rem;
     width: 100%;
     box-sizing: border-box;
   }
